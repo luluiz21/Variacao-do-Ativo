@@ -1,0 +1,26 @@
+<div class="container mt-3" style="overflow-y: auto; height: 100%;">
+  <table class="table table-hover" >
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Dia</th>
+        <th scope="col">Data</th>
+        <th scope="col">Valor (R$)</th>
+        <th scope="col">Variação em relação a D-1</th>
+        <th scope="col">Variação em relação à primeira data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stock of stocks">
+        <th scope="row">{{ stock.day }}</th>
+        <td>{{ stock.date }}</td>
+        <td>{{ stock.value | formatValue }}</td>
+        <td [ngClass]="{ 'text-danger': stock.variationFromPreviousDay < 0, 'text-success': stock.variationFromPreviousDay > 0 }">
+          {{ stock.variationFromPreviousDay | formatSpecialValues }}
+        </td>
+        <td [ngClass]="{ 'text-danger': stock.variationFromFirstDay < 0, 'text-success': stock.variationFromFirstDay > 0 }">
+          {{ stock.variationFromFirstDay | formatSpecialValues }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

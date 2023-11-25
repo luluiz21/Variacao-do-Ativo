@@ -1,0 +1,18 @@
+<div class="dashboard">
+  <app-stock-selector (searchClicked)="getStockData($event)"></app-stock-selector>
+  <ng-container *ngIf="stockList.length > 0; else noStocksMessage">
+    <div class="d-flex" style="max-height: 500px">
+      <div class="col-6">
+        <app-stock-list  [stocks]="stockList"></app-stock-list>
+      </div>
+      <div class="col-6">
+        <app-stock-chart [stockData]="stockList" ></app-stock-chart>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #noStocksMessage>
+    <div class="alert alert-info" role="alert">
+      Não foram encontradas dados. Por favor, utilize a busca para encontrar uma ação.
+    </div>
+  </ng-template>
+</div>

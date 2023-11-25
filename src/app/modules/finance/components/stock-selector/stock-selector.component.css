@@ -1,0 +1,7 @@
+.stock-selector-container {
+    margin: 1rem 0;
+  
+    .form-control {
+      max-width: 300px;
+    }
+  }
