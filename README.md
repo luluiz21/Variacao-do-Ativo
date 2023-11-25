@@ -1,27 +1,91 @@
 # VariacaoDoAtivo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+Consultar a variação do preço de um ativo a sua escolha nos últimos 30 pregões. 
 
-## Development server
+## Preview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://github.com/luluiz21/Variacao-do-Ativo/assets/17441606/0503016f-b887-4f0f-9a13-7e010a8fbdab)
 
-## Code scaffolding
+![image](https://github.com/luluiz21/Variacao-do-Ativo/assets/17441606/1cb3f65e-a786-4636-9322-55cc5eab9dc1)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://github.com/luluiz21/Variacao-do-Ativo/assets/17441606/9ad322f8-4ee5-450d-9550-e5d064f13654)
 
-## Build
+![image](https://github.com/luluiz21/Variacao-do-Ativo/assets/17441606/72feb00d-1799-423e-a791-ea06e32ebed0)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Funcionalidades
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Pesquisa das ações.
+- Lista com os últimos 30 pregões com a variação do preço ativo.
+- Gráfico com as últimas variações do preço
 
-## Further help
+## Tecnologias Utilizadas
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular 16
+- Bootstrap 
+- Angular Material 
+- ng2-charts 
+- RxJS 
+
+## Instalação
+
+Para configurar o ambiente de desenvolvimento e rodar o projeto no seu computador local, siga os passos abaixo:
+
+1. Clone o repositório para a sua máquina local usando o seguinte comando no terminal:
+
+```bash
+git clone https://github.com/luluiz21/Variacao-do-Ativo.git
+```
+
+2. Navegue até a pasta do projeto
+
+```bash
+cd Variacao-do-Ativo
+```
+
+3. Instale as dependências do projeto com npm:
+
+```bash
+npm install
+```
+
+4. Inicie o projeto
+
+```bash
+ng serve
+```
+
+## Executando os testes
+
+```bash
+ng test
+```
+## Deploy
+
+Para fazer o deploy desta aplicação, siga as instruções abaixo:
+
+### Preparação do Build
+
+Antes de realizar o deploy, você deve criar uma build de produção do seu projeto. Execute o seguinte comando para criar um build otimizado:
+
+```bash
+ng build
+```
+Para fazer deploy manualmente, você precisará do Firebase CLI e seguir os passos abaixo:
+
+```sh
+firebase deploy
+```
+Certifique-se de estar logado com uma conta que tenha permissões para fazer deploy no projeto Firebase.
+
+## Desenvolvido por
+
+Luiz Frederico Santos de Queiroz Junior
+
+## Contato
+
+Email: luluiz21@hotmail.com
+<br>
+Linkedin: https://www.linkedin.com/in/luiz-frederico/
